@@ -1,0 +1,159 @@
+{
+    "player": [{
+        "health": { "health": 3, "maxHealth": 3 },
+        "physics": { "x": 310, "y": 110, "z": 15 },
+        "input": {
+            "disx1BraD": 6, "disx2BraD": 4, "disy1BraD": 4, "disy2BraD": 8, "disy3BraD": -2, "disy4BraD": 0,
+            "disx1BraI": -6, "disx2BraI": -4, "disy1BraI": 4, "disy2BraI": 8, "disy3BraI": -2, "disy4BraI": 0,
+            "disx1PieD": 6, "disx2PieD": 4, "disy1PieD": -4, "disy2PieD": 0, "disy3PieD": -6,
+            "disx1PieI": -6, "disx2PieI": -4, "disy1PieI": -4, "disy2PieI": 0, "disy3PieI": -6,
+            "disyCab": 5, "disxCabDL": -1, "disxCabDR": 1, "disxCabU": 0, "disxCabUL": -2, "disxCabUR": 2
+        },
+        "render": { "size": 4, "sizebrazo": 0.5, "sizecabeza": 3,
+            "disxbrazoI": 4, "disybrazoI": 4, "diszbrazoI": 0,
+            "disxbrazoD": -4, "disybrazoD": 4, "diszbrazoD": 0,
+            "disxpiernaI": 4, "disypiernaI": -4, "diszpiernaI": 0,
+            "disxpiernaD": -4, "disypiernaD": -4, "diszpiernaD": 0,
+            "distanciaxcabeza": 0, "distanciaycabeza": 5, "distanciazcabeza": 0 },
+        "stamina": { "maxStamina": 1800, "cantStamina": 1800 }
+    }],
+    "enemies": [
+        {"ia": { "type": "aguila", "arrivalRadius": 0.1, "cansancio": 10.0, "ira": 10.0, "stamina": 10.0},
+         "physics": { "x": 170, "y": 650, "z": 15},
+         "vision": { "xneg": 110, "xpos": 110, "yneg": 110, "ypos": 110, "zneg": 110, "zpos": 110},
+         "health": { "health": 4, "maxHealth": 4, "damageInflicted": 1, "selfDamageOnInfliction": 0},
+         "render": { "malla": "assets/Mundo/aguila.3ds", "w": 40, "h": 40 }}
+    ],
+    "plano": [
+        {"physics": { "x": 280, "y": 410, "z": 40, "roty": 90 },
+        "render": { "malla": "assets/Mundo/Plano28x41.3ds", "w": 560, "h": 820 }}
+    ],
+    "pilares": [
+        {"physics": { "x": 10, "y": 410, "z": 40, "roty": 90 },
+        "render": { "malla": "assets/Mundo/Pilar41.3ds", "w": 20, "h": 820, "d": 80 }},
+        {"physics": { "x": 590, "y": 410, "z": 40, "roty": 90 },
+        "render": { "malla": "assets/Mundo/Pilar41.3ds", "w": 20, "h": 820, "d": 80 }}
+    ],
+    "salientes": [
+        {"physics": { "x": 110, "y": 330, "z": 65, "roty": 90 },
+        "render": { "malla": "assets/levels/level1/Bloque2.3ds" },
+        "collider": { "subirbajar": 0 },
+        "partes": [
+            {"w": 100, "h": 120, "d": 200, "disX":  -20, "disY": -250, "lanzadorrocas": false},
+            {"w":  60, "h":  40, "d": 200, "disX":  -40, "disY": -170, "lanzadorrocas": false},
+            {"w": 140, "h":  40, "d": 200, "disX":    0, "disY": -130, "lanzadorrocas": false},
+            {"w":  40, "h": 380, "d": 200, "disX":  -50, "disY":   80, "lanzadorrocas": false},
+            {"w":  80, "h":  20, "d": 200, "disX":  -30, "disY":  280, "lanzadorrocas": false},
+            {"w": 120, "h":  20, "d": 200, "disX":  -10, "disY":  300, "lanzadorrocas":  true}
+        ]},
+        {"physics": { "x": 470, "y": 140, "z": 65, "roty": 90 },
+        "render": { "malla": "assets/levels/level1/Bloque2.3ds" },
+        "collider": { "subirbajar": 0 },
+        "partes": [
+            {"w": 100, "h": 140, "d": 200, "disX":   20, "disY":  -50, "lanzadorrocas": false},
+            {"w": 140, "h":  40, "d": 200, "disX":    0, "disY":   40, "lanzadorrocas": false},
+            {"w": 100, "h":  60, "d": 200, "disX":   20, "disY":   90, "lanzadorrocas":  true}
+        ]},
+        {"physics": { "x": 250, "y": 350, "z": 65, "roty": 90 },
+        "render": { "malla": "assets/levels/level1/Bloque2.3ds" },
+        "collider": { "subirbajar": 0 },
+        "partes": [
+            {"w": 60, "h":  20, "d": 200, "disX":  0, "disY":  0, "lanzadorrocas":  true}
+        ]},
+        {"physics": { "x": 360, "y": 400, "z": 65, "roty": 90 },
+        "render": { "malla": "assets/levels/level1/Bloque2.3ds" },
+        "collider": { "subirbajar": 0 },
+        "partes": [
+            {"w": 40, "h":  20, "d": 200, "disX":  -20, "disY":  -10, "lanzadorrocas": false},
+            {"w": 80, "h":  20, "d": 200, "disX":    0, "disY":   10, "lanzadorrocas":  true}
+        ]},
+        {"physics": { "x": 480, "y": 450, "z": 65, "roty": 90 },
+        "render": { "malla": "assets/levels/level1/Bloque2.3ds" },
+        "collider": { "subirbajar": 0 },
+        "partes": [
+            {"w": 80, "h":  20, "d": 200, "disX":  0, "disY":  0, "lanzadorrocas":  true}
+        ]}
+    ],
+    "nidos": [
+        {"physics": { "x": 500, "y": 470, "z": 30 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/2x1.3ds", "w": 40, "h": 20, "d": 200}}
+    ],
+    "crias": [
+        {"physics": { "x": 500, "y": 490, "z": 30 },
+        "follow": { "x": 0, "y": 20, "z": 0 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}}
+    ],
+    "arbustos": [
+        {"physics": { "x": 140, "y": 230, "z": 30 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/2x1.3ds", "w": 40, "h": 20, "d": 200}}
+    ],
+    "palos": [
+        {"physics": { "x": 250, "y": 370, "z": 30 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}},
+        {"physics": { "x": 330, "y": 430, "z": 30 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}}
+    ],
+    "cascadas": [
+        
+    ],
+    "semillas": [
+        {"physics": { "x": 290, "y": 110, "z": 20 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}},
+        {"physics": { "x": 270, "y": 190, "z": 20 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}},
+        {"physics": { "x": 150, "y": 310, "z": 20 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}},
+        {"physics": { "x": 170, "y": 390, "z": 20 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}},
+        {"physics": { "x": 370, "y": 510, "z": 20 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}},
+        {"physics": { "x": 370, "y": 590, "z": 20 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}},
+        {"physics": { "x": 370, "y": 750, "z": 20 },
+        "collider": { "subirbajar": 0 },
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}}
+    ],
+    "enganches": [
+        {"physics": { "x": 230, "y": 250, "z": 20 },
+        "collider": { "subirbajar": 0},
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}},
+        {"physics": { "x": 270, "y": 450, "z": 20 },
+        "collider": { "subirbajar": 0},
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}},
+        {"physics": { "x": 370, "y": 650, "z": 20 },
+        "collider": { "subirbajar": 0},
+        "render": { "malla": "assets/Mundo/1x1.3ds", "w": 20, "h": 20, "d": 200}}
+    ],
+    "agujeros": [
+        
+    ],
+    "trampolines": [
+        
+    ],
+    "musgos": [
+
+    ],
+    "hielos": [
+        
+    ],
+    "planosespeciales": [
+        
+    ],
+    "salientesespeciales": [
+        
+    ],
+    "meta": [
+        {"physics": { "x": 300, "y": 800, "z": 25 }}
+    ]
+}
